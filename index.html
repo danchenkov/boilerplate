@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link href="/css/normalize.css" rel="stylesheet">
+  <link href="/css/boilerplate.css" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet">
+
+  <link href="https://vjs.zencdn.net/7.5.4/video-js.min.css" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
+  <main id="main">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Album example</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="video-player-main">
+    <div class="iframe16x9-wrapper">
+      <video id='video-big_buck_bunny' class='video-js' controls preload='auto' width='960' height='540' poster='/images/big_buck_bunny.jpg' data-setup='{}'>
+        <source src='/video/big_buck_bunny.mp4' type='video/mp4'>
+        <source src='/video/big_buck_bunny.webm' type='video/webm'>
+        <p class='vjs-no-js'>
+          To view this video please enable JavaScript, and consider upgrading to a web browser that
+          <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+        </p>
+      </video>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script> -->
+  <!-- <script src="/dist/plugins.js"></script> -->
+  <!-- <script src="/dist/vendor.js"></script> -->
+  <script src="/dist/index.js"></script>
+  <!-- <script src='https://vjs.zencdn.net/7.5.4/video.min.js'></script> -->
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
