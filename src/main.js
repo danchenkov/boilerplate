@@ -16,8 +16,8 @@ $(document).ready(function(){
 	Vue.config.devtools = true;
 
 	Vue.component('post', {
-		props: ['title'],
-		template: '<h3>{{ title }}</h3>'
+		props: ['post'],
+		template: '<h3>{{ post.title }}</h3>'
 	});
 
 	new Vue({
