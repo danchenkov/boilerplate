@@ -40,18 +40,52 @@
     </section>
   </main>
 
-  <div id="video-player-main">
-    <div class="iframe16x9-wrapper">
-      <video id='video-big_buck_bunny' class='video-js' controls preload='auto' width='960' height='540' poster='/images/big_buck_bunny.jpg' data-setup='{}'>
-        <source src='/video/big_buck_bunny.mp4' type='video/mp4'>
-        <source src='/video/big_buck_bunny.webm' type='video/webm'>
-        <p class='vjs-no-js'>
-          To view this video please enable JavaScript, and consider upgrading to a web browser that
-          <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
-        </p>
-      </video>
+  <section id="vue">
+    <div class="container">
+      <div id="app">
+        <span v-bind:title="message">
+          Hover your mouse over me for a few seconds
+          to see my dynamically bound title!
+        </span>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section id="test">
+    <table id="sample">
+      <thead>
+        <tr>
+          <td colspan="2">SALES</td>
+          <td colspan="2">RENTS</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>ROME</td>
+          <td>MILAN</td>
+          <td>ROME</td>
+          <td>MILAN</td>
+          <td>MONEY</td>
+        </tr>
+      </thead>
+    </table>
+    <div id="result">
+    </div>
+  </section>
+
+  <section id="video">
+    <div id="video-player-main">
+      <div class="iframe16x9-wrapper">
+        <video id='video-big_buck_bunny' class='video-js' controls preload='auto' width='960' height='540' poster='/images/big_buck_bunny.jpg' data-setup='{}'>
+          <source src='/video/big_buck_bunny.mp4' type='video/mp4'>
+          <source src='/video/big_buck_bunny.webm' type='video/webm'>
+          <p class='vjs-no-js'>
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+          </p>
+        </video>
+      </div>
+    </div>
+  </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
@@ -59,7 +93,8 @@
   <!-- <script src="/dist/plugins.js"></script> -->
   <!-- <script src="/dist/vendor.js"></script> -->
   <script src="/dist/index.js"></script>
-  <!-- <script src='https://vjs.zencdn.net/7.5.4/video.min.js'></script> -->
+  <script src='https://vjs.zencdn.net/7.5.4/video.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
