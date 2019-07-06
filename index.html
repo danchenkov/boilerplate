@@ -44,7 +44,7 @@
   <div class="container">
     <!-- <user-name name="Flavio"></user-name> -->
     <div id="app">
-      <post v-for="post in posts" v-bind:key="post.id" v-bind:title="post.title"></post>
+      <post v-for="post in posts" v-bind:key="post.id" v-bind:post="post"></post>
       <!-- <post title="Blogging with Vue"></post> -->
       <!-- <post title="Why Vue is so fun"></post> -->
     </div>
