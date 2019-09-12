@@ -16,6 +16,7 @@
   <link href="/css/main.css" rel="stylesheet">
 
   <link href="https://vjs.zencdn.net/7.5.4/video-js.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,600,600i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -27,8 +28,18 @@
 
   <!-- Add your site or application content here -->
   <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
-  <!-- <main id="main">
-    <section class="jumbotron text-center">
+   <main id="main">
+    <!-- <section id="font-check" class="jumbotron" style="font-size: 16px; max-width: 768px;">
+      <p style="font-family: 'Muli', sans-serif;">Но расцвет типографики как отдельной сферы деятельности начался в Европе, где она появилась в середине XV века. Её распространению способствовали лёгкость и относительно малое количество символов в латинском шрифте, в отличие от китайских иероглифов. Первым, кто серьёзно занялся европейским типографическим искусством, стал Иоганн Гутенберг (1397—1468 гг.), немецкий изобретатель и ювелир. Создав в 1440 году из свинцовых букв наборную форму, он подарил миру первый печатный станок. Отныне создавать книги стало гораздо проще, их стоимость уменьшилась, а количество — возросло.</p>
+
+      <address class="container">
+        <strong>Юридический адрес:</strong> 123557, г.&#160;Москва, ул.&#160;Малая Грузинская, д.&#160;52/34, стр.&#160;1, офис&#160;212-1<br>
+        <strong>Телефон:</strong> +7&#160;(495)&#160;661-71-04<br>
+        <strong>Электронная почта:</strong> <a href="mailto:info@new-era.ru">info@new-era.ru</a><br>
+        <strong>Почтовый адрес:</strong> 101000, г.&#160;Москва, а/я&#160;947
+      </address>
+    </section> -->
+    <!-- <section class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Album example</h1>
         <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
@@ -37,19 +48,67 @@
           <a href="#" class="btn btn-secondary my-2">Secondary action</a>
         </p>
       </div>
-    </section>
+    </section> -->
   </main>
--->
-<section id="vue">
-  <div class="container">
-    <!-- <user-name name="Flavio"></user-name> -->
-    <div id="app">
-      <post v-for="post in posts" v-bind:key="post.id" v-bind:post="post"></post>
-      <!-- <post title="Blogging with Vue"></post> -->
-      <!-- <post title="Why Vue is so fun"></post> -->
-    </div>
+
+
+<!-- <style>
+  .grid {
+    margin: auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 3.245fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+  }
+  figure {
+    margin: 0;
+  }
+  figure img {
+    width: 100%;
+    margin: 0;
+  }
+  .item1 {
+    outline: 1px dotted red;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  .item2 {
+    outline: 1px dotted green;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .item3 {
+    outline: 1px dotted blue;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+</style> -->
+
+<section id="layout1">
+  <div class="grid">
+    <figure class="item1"><img src="http://placehold.it/300x300" /></figure>
+    <figure class="item2"><img src="http://placehold.it/100x160" /></figure>
+    <figure class="item3"><img src="https://imagenotfound.com/broken.jpeg" /></figure>
+    <figure class="item4"><img src="http://placehold.it/100x160" /></figure>
   </div>
 </section>
+
+
+<section id="crawlme">
+  <a href="/strip.html">Check strip</a>
+  <a href="/faulty.html">Check broken link</a>
+</section>
+
+
+<!-- <section id="vue">
+  <div class="container">
+    <user-name name="Flavio"></user-name>
+    <div id="app">
+      <post v-for="post in posts" v-bind:key="post.id" v-bind:post="post"></post>
+    </div>
+  </div>
+</section> -->
 
   <!-- <section id="video">
     <div id="video-player-main">
