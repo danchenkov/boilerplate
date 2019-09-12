@@ -24,11 +24,19 @@ $(document).ready(function(){
 		el: '#app',
 		data: {
 		posts: [
-			{ id: 1, title: 'My journey with Vue' },
-			{ id: 2, title: 'Blogging with Vue' },
-			{ id: 3, title: 'Why Vue is so fun' }
+			{ id: 1, title: 'Target A1' },
+			{ id: 2, title: 'Target B2' },
+			{ id: 3, title: 'Target C3' },
+			{ id: 4, title: 'Target D4' },
+			{ id: 5, title: 'Target E5' },
+			{ id: 6, title: 'Target F6' },
+			{ id: 7, title: 'Target G7' },
+			{ id: 8, title: 'Target H8' }
 		]
 		}
 	});
+
+	console.log("Hello from JavaScript!");
+	console.log(moment().startOf('day').fromNow());
 });
 
