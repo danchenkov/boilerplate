@@ -2,21 +2,22 @@
   "scripts": {
     "build": "webpack --mode production",
     "watch": "webpack --watch",
-    "develop": "webpack --mode development --watch"
+    "develop": "webpack --mode development --watch",
+    "serve": "webpack-dev-server"
   },
   "dependencies": {
     "autoprefixer": "^9.6.0",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
     "extract-loader": "^3.1.0",
-    "http-server": "^0.11.1",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "popper.js": "^1.15.0",
     "postcss-loader": "^3.0.0",
     "precss": "^4.0.0",
     "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.8.1"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
