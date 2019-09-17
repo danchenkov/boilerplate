@@ -25,41 +25,40 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-<!-- Add your site or application content here -->
-<main id="main">
-  <h1>Hello world! This is HTML5 Boilerplate.</h1>
-  <!-- <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jumbotron-heading">Album example</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-      <p>
-        <a href="#" class="btn btn-primary my-2">Main call to action</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-      </p>
-    </div>
-  </section> -->
+  <!-- Add your site or application content here -->
+  <main id="main">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1>Hello world! This is HTML5 Boilerplate.</h1>
+      </div>
+    </section>
 
-  <section id="strip">
-    <p>Misunderstood strip</p>
-    <a href="/">Back Home</a>
-  </section>
+    <section id="strip">
+      <h3>Misunderstood strip</h3>
 
-  <section id="layout1">
-    <div class="grid">
-      <figure class="item1"><img src="http://placehold.it/500x300" /></figure>
-      <figure class="item2"><img src="http://placehold.it/320x160" /></figure>
-      <figure class="item3"><img src="http://placehold.it/480x160" /></figure>
-    </div>
-  </section>
-</main>
+      <p>Take me <a href="/">home</a></p>
+      <p>Internal link to a <a href="404.html">404 page</a></p>
+      <p>Link to external wiki of <a href="https://en.wikipedia.org/wiki/Mount_Ararat" target="_blank">Mount Ararat</a></p>
+    </section>
 
-<script>
-var html = "<p> Unusual<br />, circumstances with some   HTML </p>";
-var div = document.createElement("div");
-div.innerHTML = html;
-var text = div.textContent || div.innerText || "";
-console.log("[" + text + "]");
-</script>
+
+    <section id="layout1">
+      <div class="grid">
+        <figure class="item1"><img src="http://placehold.it/500x300" /></figure>
+        <figure class="item2"><img src="http://placehold.it/320x160" /></figure>
+        <figure class="item3"><img src="http://placehold.it/480x160" /></figure>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    var html = "<p> Unusual<br />, circumstances with some   HTML </p>";
+    var div = document.createElement("div");
+    div.innerHTML = html;
+    var text = div.textContent || div.innerText || "";
+    console.log("[" + text + "]");
+
+  </script>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -73,8 +72,13 @@ console.log("[" + text + "]");
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    window.ga = function() { ga.q.push(arguments) };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
