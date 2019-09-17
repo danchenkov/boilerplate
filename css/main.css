@@ -53,8 +53,6 @@
 
 #main .jumbotron {
 	font-family: 'Muli', sans-serif;
-	"
-
 }
 
 .grid {
@@ -91,4 +89,9 @@ figure img {
 	outline: 1px dotted blue;
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
+}
+
+
+#strip {
+	margin-bottom: 1em;
 }
