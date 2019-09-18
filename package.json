@@ -1,9 +1,8 @@
 {
   "scripts": {
-    "build": "webpack --mode production",
-    "watch": "webpack --watch",
-    "develop": "webpack --mode development --watch",
-    "serve": "webpack-dev-server"
+    "develop": "webpack-dev-server --mode development --watch",
+    "serve": "webpack-dev-server --mode development --watch",
+    "build": "webpack --mode production"
   },
   "dependencies": {
     "autoprefixer": "^9.6.0",
