@@ -13,11 +13,12 @@ module.exports = {
     },
   },
   entry: {
-    main: './src/main.js'
+    main: './src/main.js',
+    vue: './src/vue.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js'
+    filename: '[name].js'
   },
   plugins: [
     new webpack.ProvidePlugin({
