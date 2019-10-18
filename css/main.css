@@ -77,8 +77,10 @@ p {
 	margin: auto;
 	max-width: 800px;
 	display: grid;
-    /* x(w) func
-    	x = (wz - gz - g) / (g + 2yw- 2yg) 
+
+  /*
+  x(w) func
+    	x = (wz - gz - g) / (g + 2yw- 2yg)
     	where x - ratio between widths of block 1 and 2
     	w - container width
     	z - aspect ratio of block 1
@@ -89,8 +91,8 @@ p {
     	w = a + b;
     	b = ax;
     	az = 2yb + g;
-    */
-    grid-template-columns: 4.137362637362637fr 1fr;
+  */
+  grid-template-columns: 4.137362637362637fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 20px;
 }

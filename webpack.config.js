@@ -5,6 +5,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: isDevelopment ? 'development' : 'production',
+  performance: {
+    hints: false
+  },
   devServer: {
     port: 5005,
     contentBase: './',
