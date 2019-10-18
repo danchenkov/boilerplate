@@ -1,30 +1,30 @@
 const path = require('path');
 const webpack = require('webpack');
-const isDevelopment = process.env.NODE_ENV !== 'production'
+const isDevelopment = process.env.NODE_ENV !== 'production';
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: isDevelopment ? 'development' : 'production',
-  devServer: {
-    port: 5005,
-    contentBase: './',
-    watchOptions: {
-      poll: true
-    },
-  },
+  // performance: {
+  //   hints: false
+  // },
+  // devServer: {
+  //   port: 5005,
+  //   contentBase: './',
+  //   watchOptions: {
+  //     poll: true
+  //   },
+  // },
   entry: {
     main: './src/main.js',
     vue: './src/vue.js'
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'assets'),
     filename: '[name].js'
   },
   plugins: [
   new webpack.ProvidePlugin({
-    $: 'jquery',
-    jQuery: 'jquery',
-    'window.jQuery': 'jquery',
     'autoprefixer': {},
     'moment': 'moment'
   }),
@@ -36,34 +36,34 @@ module.exports = {
   module: {
     rules: [
     {
-      test: /\.module\.s(a|c)ss$/,
-      loader: [
-      isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-      {
-        loader: 'css-loader',
-        options: {
-          modules: true,
-          localIdentName: '[name]__[local]___[hash:base64:5]',
-          camelCase: true,
-          sourceMap: isDevelopment
-        }
-      }, {
-        loader: 'postcss-loader', // Run postcss actions
-        options: {
-          plugins: function () { // postcss plugins, can be exported to postcss.config.js
-            return [
-            require('autoprefixer')
-            ];
-          }
-        }
-      }, {
-        loader: 'sass-loader',
-        options: {
-          sourceMap: isDevelopment
-        }
-      }
-      ]
-    }, {
+    //   test: /\.module\.s(a|c)ss$/,
+    //   loader: [
+    //   isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+    //   {
+    //     loader: 'css-loader',
+    //     options: {
+    //       modules: true,
+    //       localIdentName: '[name]__[local]___[hash:base64:5]',
+    //       camelCase: true,
+    //       sourceMap: isDevelopment
+    //     }
+    //   }, {
+    //     loader: 'postcss-loader', // Run postcss actions
+    //     options: {
+    //       plugins: function () { // postcss plugins, can be exported to postcss.config.js
+    //         return [
+    //         require('autoprefixer')
+    //         ];
+    //       }
+    //     }
+    //   }, {
+    //     loader: 'sass-loader',
+    //     options: {
+    //       sourceMap: isDevelopment
+    //     }
+    //   }
+    //   ]
+    // }, {
       test: /\.s(a|c)ss$/,
       exclude: /\.module.(s(a|c)ss)$/,
       loader: [
@@ -76,19 +76,23 @@ module.exports = {
         }
       }
       ]
-    }, {
-      test: /\.css$/,
-      loader: [
-      isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-      'css-loader'
-      ]
+    // }, {
+    //   test: /\.css$/,
+    //   loader: [
+    //   isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+    //   'css-loader'
+    //   ]
     }
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.scss', '.css']
+    // extensions: ['.js', '.jsx', '.scss', '.css']
+    extensions: ['.js', '.jsx']
   },
   externals: {
+    $: 'jquery',
+    jQuery: 'jquery',
+    'window.jQuery': 'jquery',
     Modernizr: 'modernizr'
   }
 };
