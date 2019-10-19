@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "develop": "webpack-dev-server --mode development --watch",
-    "serve": "webpack-dev-server --mode development --watch",
+    "watch": "webpack --mode development --watch",
+    "serve": "caddy -conf ~/Code/caddy/conf/Caddyfile",
+    "dev": "concurrently --kill-others \"npm run watch\" \"npm run serve\"",
     "build": "webpack --mode production"
   },
   "dependencies": {

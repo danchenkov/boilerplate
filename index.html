@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="ru">
 
 <head>
 	<meta charset="utf-8">
@@ -13,6 +13,7 @@
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 	<link href="/assets/main.css" rel="stylesheet">
+	<link href="/assets/overrides.css" rel="stylesheet">
 
 	<link href="https://vjs.zencdn.net/7.5.4/video-js.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,600,600i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
@@ -35,7 +36,7 @@
 
 
 		<section id="images">
-			<div class="grid">
+			<div class="grid" style="grid-template-columns: 4.1373626fr 1fr;">
 				<figure class="item1"><img src="http://placehold.it/400x400" /></figure>
 				<figure class="item2"><img src="http://placehold.it/100x200" /></figure>
 				<figure class="item3"><img src="http://placehold.it/100x200" /></figure>
@@ -48,7 +49,20 @@
 
 		<section id="font-check" class="jumbotron with-toggle-button">
 			<p>Но расцвет типографики как отдельной сферы деятельности начался в Европе, где она появилась в середине XV века. Её распространению способствовали лёгкость и относительно малое количество символов в латинском шрифте, в отличие от китайских иероглифов. Первым, кто серьёзно занялся европейским типографическим искусством, стал Иоганн Гутенберг (1397—1468 гг.), немецкий изобретатель и ювелир. Создав в 1440 году из свинцовых букв наборную форму, он подарил миру первый печатный станок. Отныне создавать книги стало гораздо проще, их стоимость уменьшилась, а количество — возросло.</p>
-			<p>Кстати, да</p>
+			<p>Кстати, да, списки можно форматировать на национальных языках:</p>
+
+			<ol class="sample-list"><strong>List 1</strong>
+				<li>Hello</li>
+				<li>World</li>
+				<li>What's up?</li>
+			</ol>
+
+			<ol class="sample-list"><strong>List 2</strong>
+				<li>Looks</li>
+				<li>Like</li>
+				<li>The</li>
+				<li>Same</li>
+			</ol>
 		</section>
 
 
@@ -71,6 +85,7 @@
 				<tbody>
 					<td>
 						<p>Internal link to <a href="sample-form.html">Sample Form</a></p>
+						<p>Internal link to <a href="layout.html">Sample Layout</a></p>
 						<p>Internal link to <a href="video.html">Sample Video</a></p>
 						<p>Internal link to <a href="strip.html">Strip</a></p>
 						<p>Internal link to a <a href="404.html" target="frame">404 page</a></p>
@@ -119,16 +134,6 @@
 			<a href="/faulty.html">Check broken link</a>
 		</section>
 
-
-		<!-- <section id="vue">
-			<div class="container">
-				<user-name name="Flavio"></user-name>
-				<div id="app">
-					<post v-for="post in posts" v-bind:key="post.id" v-bind:post="post"></post>
-				</div>
-			</div>
-		</section> -->
-
 		<!-- <section id="video">
 			<div id="video-player-main">
 				<div class="iframe16x9-wrapper">
@@ -148,12 +153,20 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<<<<<<< HEAD
 	<!-- <script src="/dist/plugins.js"></script> -->
 	<!-- <script src="/dist/vendor.js"></script> -->
 	<script src="/dist/main.js"></script>
 	<script src="/dist/vue.js"></script>
 	<script src='https://vjs.zencdn.net/7.5.4/video.min.js'></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+=======
+	<script src="/assets/main.js"></script>
+	<!-- <script src="/assets/vue.js"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+	<!-- <script src="https://vjs.zencdn.net/7.5.4/video.min.js"></script> -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+>>>>>>> 865989a (updated with pages fiddle)
 
 	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 	<script>
