@@ -1,0 +1,69 @@
+#absolute {
+  background: #d1e5fa;
+  background-color: rgba(209, 230, 250, 0.8);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#991e1e+0,d62828+61,e57b7b+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(150deg, #1e9947 0%, #28d759 61%, #7be597 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#991e1e', endColorstr='#e57b7b',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  position: absolute;
+  right: 0;
+  top: 10%;
+  border: 1px dashed blue;
+  padding: 0.7em 1.4em;
+  max-width: 440px !important; }
+
+#fixed {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+61,7db9e8+100 */
+  background: #fad1d1;
+  /* Old browsers */
+  background-color: rgba(236, 250, 209, 0.8);
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(-150deg, rgba(30, 133, 153, 0.75) 0%, rgba(44, 196, 216, 0.75) 61%, rgba(125, 221, 232, 0.75) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  position: fixed;
+  left: 0;
+  bottom: 4%;
+  border: 1px dotted red;
+  padding: 0.7em 1.4em;
+  max-width: 440px !important; }
+
+#layout figure figcaption {
+  font-style: oblique;
+  font-size: 0.8em;
+  text-shadow: 0 0 1px white, 1px 1px 4px rgba(0, 0, 0, 0.5); }
+
+aside {
+  float: right;
+  width: 47%;
+  padding-left: 2em;
+  border-left: 1px solid black;
+  margin-left: 2em; }
+  @media screen and (min-width: 961px) {
+    aside {
+      margin-right: -15%; } }
+
+#vue {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-top: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  padding: 1em 4em; }
+
+#video {
+  display: none; }
+
+#result {
+  color: darkblue; }
+
+#log {
+  color: darkred; }
+
+p:first-line {
+  font-weight: bold;
+  color: navy; }
