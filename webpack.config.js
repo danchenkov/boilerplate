@@ -6,13 +6,6 @@ const MomentLocalesPlugin = require("moment-locales-webpack-plugin");
 
 module.exports = {
 	mode: isDevelopment ? "development" : "production",
-	devServer: {
-		port: 5005,
-		contentBase: "./",
-		watchOptions: {
-			poll: true
-		}
-	},
 	entry: {
 		main: "./src/main.js",
 		vue: "./src/vue.js"
@@ -32,69 +25,32 @@ module.exports = {
 		// (“en” is built into Moment and can’t be removed)
 		new MomentLocalesPlugin({
 			localesToKeep: ["ru"]
-		}),
-		new MiniCssExtractPlugin({
-			filename: isDevelopment ? "[name].css" : "[name].[hash].css",
-			chunkFilename: isDevelopment ? "[id].css" : "[id].[hash].css"
 		})
 	],
 	module: {
 		rules: [
 			{
-				test: /\.module\.s(a|c)ss$/,
-				loader: [
-					isDevelopment
-						? "style-loader"
-						: MiniCssExtractPlugin.loader,
-					{
-						loader: "css-loader",
-						options: {
-							modules: true,
-							localIdentName: "[name]__[local]___[hash:base64:5]",
-							camelCase: true,
-							sourceMap: isDevelopment
-						}
-					},
-					{
-						loader: "postcss-loader", // Run postcss actions
-						options: {
-							plugins: function() {
-								// postcss plugins, can be exported to postcss.config.js
-								return [require("autoprefixer")];
-							}
-						}
-					},
-					{
-						loader: "sass-loader",
-						options: {
-							sourceMap: isDevelopment
-						}
-					}
-				]
-			},
-			{
 				test: /\.s(a|c)ss$/,
 				exclude: /\.module.(s(a|c)ss)$/,
-				loader: [
-					isDevelopment
-						? "style-loader"
-						: MiniCssExtractPlugin.loader,
-					"css-loader",
+				use: [
 					{
-						loader: "sass-loader",
+						loader: "file-loader",
 						options: {
-							sourceMap: isDevelopment
+							name: "[name].css"
 						}
+					},
+					{
+						loader: "extract-loader"
+					},
+					{
+						loader: "css-loader?-url"
+					},
+					{
+						loader: "postcss-loader"
+					},
+					{
+						loader: "sass-loader"
 					}
-				]
-			},
-			{
-				test: /\.css$/,
-				loader: [
-					isDevelopment
-						? "style-loader"
-						: MiniCssExtractPlugin.loader,
-					"css-loader"
 				]
 			}
 		]
