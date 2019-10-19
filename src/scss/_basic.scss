@@ -66,7 +66,6 @@ p {
 
 #main #font-check {
 	font-size: 16px;
-	font-family: ;
 }
 
 #main .jumbotron {
@@ -78,21 +77,7 @@ p {
 	max-width: 800px;
 	display: grid;
 
-  /*
-  x(w) func
-    	x = (wz - gz - g) / (g + 2yw- 2yg)
-    	where x - ratio between widths of block 1 and 2
-    	w - container width
-    	z - aspect ratio of block 1
-    	y - aspect ratio of blocks 2 and 3 (considered equal)
-    	g - gap
-
-    	Basic calculations:
-    	w = a + b;
-    	b = ax;
-    	az = 2yb + g;
-  */
-  grid-template-columns: 4.137362637362637fr 1fr;
+	grid-template-columns: 4.137362637362637fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-gap: 20px;
 }
@@ -138,3 +123,18 @@ figure img {
 #lists {
 	display: none;
 }
+
+
+// x(w) func
+//   	x = (wz - gz - g) / (g + 2yw- 2yg)
+//   	where x - ratio between widths of block 1 and 2
+//   	w - container width
+//   	z - aspect ratio of block 1
+//   	y - aspect ratio of blocks 2 and 3 (considered equal)
+//   	g - gap
+
+//   	Basic calculations:
+//   	w = a + b;
+//   	b = ax;
+//   	az = 2yb + g;
+
