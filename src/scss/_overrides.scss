@@ -1,52 +1,73 @@
 @charset "UTF-8";
-.lower-alpha {
+ol.lower-alpha {
 	list-style: none;
 	li {
 		position: relative;
 		margin-left: 1.4em;
 		&::before {
 			position: absolute;
-			left: -1.4em;
+			left: -1.5em;
 		}
-	}
 
-	:lang(ru) & {
-		& li:nth-of-type(1)::before {
-			content: "а. ";
+		&:nth-of-type(1)::before {
+			:lang(ru) & {
+				content: "а. ";
+			}
 		}
-		& li:nth-of-type(2)::before {
-			content: "б. ";
+		&:nth-of-type(2)::before {
+			:lang(ru) & {
+				content: "б. ";
+			}
 		}
-		& li:nth-of-type(3)::before {
-			content: "в. ";
+		&:nth-of-type(3)::before {
+			:lang(ru) & {
+				content: "в. ";
+			}
 		}
-		& li:nth-of-type(4)::before {
-			content: "г. ";
+		&:nth-of-type(4)::before {
+			:lang(ru) & {
+				content: "г. ";
+			}
 		}
-		& li:nth-of-type(5)::before {
-			content: "д. ";
+		&:nth-of-type(5)::before {
+			:lang(ru) & {
+				content: "д. ";
+			}
 		}
-		& li:nth-of-type(6)::before {
-			content: "е. ";
+		&:nth-of-type(6)::before {
+			:lang(ru) & {
+				content: "е. ";
+			}
 		}
-		& li:nth-of-type(7)::before {
-			content: "ж. ";
+		&:nth-of-type(7)::before {
+			:lang(ru) & {
+				content: "ж. ";
+			}
 		}
-		& li:nth-of-type(8)::before {
-			content: "з. ";
+		&:nth-of-type(8)::before {
+			:lang(ru) & {
+				content: "з. ";
+			}
 		}
-		& li:nth-of-type(9)::before {
-			content: "и. ";
+		&:nth-of-type(9)::before {
+			:lang(ru) & {
+				content: "и. ";
+			}
 		}
-		& li:nth-of-type(10)::before {
-			content: "к. ";
+		&:nth-of-type(10)::before {
+			:lang(ru) & {
+				content: "к. ";
+			}
 		}
-		& li:nth-of-type(11)::before {
-			content: "л. ";
+		&:nth-of-type(11)::before {
+			:lang(ru) & {
+				content: "л. ";
+			}
 		}
-		& li:nth-of-type(12)::before {
-			content: "м. ";
+		&:nth-of-type(12)::before {
+			:lang(ru) & {
+				content: "м. ";
+			}
 		}
 	}
 }
-
