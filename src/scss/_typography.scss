@@ -4,7 +4,7 @@
 h1 {
 	color: darkred;
 	font-family: Muli;
-	+p {
+	+p.subtitle {
 		margin-top: -0.5rem;
 	}
 }
@@ -102,3 +102,6 @@ textarea {
 code {
 	color: #f66;
 }
+
+:lang(en) *[lang="ru-ru"] { display: none; }
+:lang(ru) *[lang="en-us"] { display: none; }

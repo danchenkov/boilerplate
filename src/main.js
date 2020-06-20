@@ -39,8 +39,10 @@ $(document).ready(function() {
 		$("#main>section.toggleable").toggle();
 	});
 
-	console.log("Hello from JavaScript!");
-	console.log(moment().startOf('day').fromNow());
+	// console.log("Hello from JavaScript!");
+	// moment.locale($("#start-of-the-day")[0].lang);
+	moment.locale(document.documentElement.lang);
+	$(".start-of-the-day").text(moment().startOf('day').fromNow());
 
 	if (window.location.pathname == "/sample-form.html") {
 		var urlParams = new URLSearchParams(window.location.search);
@@ -53,4 +55,8 @@ $(document).ready(function() {
 		setValueOfFormField('password', urlParams.get('password'))
 		setCheckedValueOfCheckbox('terms', urlParams.get('terms'))
 	}
+
+
 });
+
+
