@@ -34,3 +34,4 @@ yarn-debug.log*
 .DS_Store
 *.code-workspace
 *.sublime-*
+.yarn
