@@ -111,3 +111,13 @@ ol.lower-alpha {
 .start-of-the-day {
 	color: navy;
 }
+
+.three-columns {
+	display: flex;
+	@media screen and (min-width: 992px) {
+		justify-content: space-between;
+		>div {
+			width: calc((100% - 2em / 3));
+		}
+	}
+}
