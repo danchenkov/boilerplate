@@ -1,9 +1,17 @@
 {
-	http_port   8101
-	https_port  8102
+	debug
+	http_port 8081
+	https_port 6081
+	admin off
 	local_certs
 }
 
-localhost:8100, vue.local:8100
+vue.local {
+	encode gzip
+	file_server
+}
 
-file_server
+localhost {
+	redir https://vue.local:6081{uri}
+}
+
