@@ -58,17 +58,20 @@
     --width: 768px;
     --gap: 20px;
     --aspect-1: 1;
-    --aspect-2: 0.4;
-    --aspect-3: 0.4;
+    --aspect-2: 0.5;
+    --aspect-3: 1.5;
     --width-1: (var(--gap) * var(--aspect-2) * var(--aspect-3) + (var(--width) - var(--gap)) * (var(--aspect-2) + var(--aspect-3))) /
-        (var(--aspect-2) * var(--aspect-3) / var(--aspect-1) + var(--aspect-2) + var(--aspect-3));
+        (var(--aspect-2) + var(--aspect-3) + var(--aspect-2) * var(--aspect-3) / var(--aspect-1));
     --width-2: var(--width) - var(--width-1) - var(--gap);
-    --height-1: var(--width-1) / var(--aspect-1);
-    --height-2: var(--width-2) / var(--aspect-2);
-    --height-3: var(--width-2) / var(--aspect-3);
+    --height-1: (var(--width-1)) / (var(--aspect-1));
+    --height-2: (var(--width-2)) / (var(--aspect-2));
+    --height-3: (var(--width-2)) / (var(--aspect-3));
     margin: 0 0 1em;
     display: grid;
-    // border-spacing: var(--gap);
+    left: calc(var(--width-1));
+    right: calc(var(--width-2));
+    top: calc(var(--height-2));
+    bottom: calc(var(--height-3));
     grid-gap: var(--gap);
     grid-template-columns: calc(var(--width-1)) calc(var(--width-2));
     grid-template-rows: calc(var(--height-2)) calc(var(--height-3));
