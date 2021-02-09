@@ -19,8 +19,9 @@
     "stylelint-config-sass-guidelines": "^7.1.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-statement-max-nesting-depth": "^2.0.1",
+    "video.js": "^7.11.4",
     "webpack": "^5.11.1",
-    "webpack-cli": "^4.3.0"
+    "webpack-cli": "^4.5.0"
   },
   "name": "html",
   "description": "HTML boilerplate pages with examples of video, list style, vue operations",
@@ -45,6 +46,10 @@
   },
   "homepage": "https://github.com/danchenkov/boilerplate#readme",
   "dependencies": {
-    "flatpickr": "^4.6.9"
+    "bcrypt": "^5.0.0",
+    "bootstrap": "^5.0.0-beta1",
+    "flatpickr": "^4.6.9",
+    "md5": "^2.3.0",
+    "modernizr": "^3.11.4"
   }
 }
