@@ -1,55 +1,56 @@
 {
-  "devDependencies": {
-    "autoprefixer": "^10.1.0",
-    "css-loader": "^5.0.1",
-    "cypress": "^5.2.0",
-    "extract-loader": "^5.1.0",
-    "file-loader": "^6.2.0",
-    "lodash": "^4.17.20",
-    "moment": "^2.29.1",
-    "moment-locales-webpack-plugin": "^1.2.0",
-    "moment-with-locales-es6": "^1.0.1",
-    "postcss": "^8.2.2",
-    "postcss-loader": "^4.1.0",
-    "sass": "^1.32.0",
-    "sass-loader": "^10.1.0",
-    "style-loader": "^2.0.0",
-    "stylelint": "^13.9.0",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-config-sass-guidelines": "^7.1.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-statement-max-nesting-depth": "^2.0.1",
-    "video.js": "^7.11.4",
-    "webpack": "^5.11.1",
-    "webpack-cli": "^4.5.0"
-  },
-  "name": "html",
-  "description": "HTML boilerplate pages with examples of video, list style, vue operations",
-  "version": "1.0.0",
-  "main": "postcss.config.js",
-  "directories": {
-    "doc": "doc"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss ./static/css/main.css -o ./static/css/main-prefixed.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danchenkov/boilerplate.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/danchenkov/boilerplate/issues"
-  },
-  "homepage": "https://github.com/danchenkov/boilerplate#readme",
-  "dependencies": {
-    "bcrypt": "^5.0.0",
-    "bootstrap": "^5.0.0-beta1",
-    "flatpickr": "^4.6.9",
-    "md5": "^2.3.0",
-    "modernizr": "^3.11.4"
-  }
+    "devDependencies": {
+        "autoprefixer": "^10.1.0",
+        "css-loader": "^5.0.1",
+        "cypress": "^5.2.0",
+        "extract-loader": "^5.1.0",
+        "file-loader": "^6.2.0",
+        "lodash": "^4.17.20",
+        "moment": "^2.29.1",
+        "moment-locales-webpack-plugin": "^1.2.0",
+        "moment-with-locales-es6": "^1.0.1",
+        "postcss": "^8.2.2",
+        "postcss-loader": "^4.1.0",
+        "sass": "^1.32.0",
+        "sass-loader": "^10.1.0",
+        "style-loader": "^2.0.0",
+        "stylelint": "^13.9.0",
+        "stylelint-config-recommended-scss": "^4.2.0",
+        "stylelint-config-sass-guidelines": "^7.1.0",
+        "stylelint-config-standard": "^20.0.0",
+        "stylelint-statement-max-nesting-depth": "^2.0.1",
+        "video.js": "^7.11.4",
+        "webpack": "^5.11.1",
+        "webpack-cli": "^4.5.0"
+    },
+    "name": "html",
+    "description": "HTML boilerplate pages with examples of video, list style, vue operations",
+    "version": "1.0.0",
+    "main": "postcss.config.js",
+    "directories": {
+        "doc": "doc"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build:css": "postcss ./static/css/main.css -o ./static/css/main-prefixed.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danchenkov/boilerplate.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/danchenkov/boilerplate/issues"
+    },
+    "homepage": "https://github.com/danchenkov/boilerplate#readme",
+    "dependencies": {
+        "bcrypt": "^5.0.0",
+        "bootstrap": "^5.0.0-beta1",
+        "flatpickr": "^4.6.9",
+        "fs": "^0.0.1-security",
+        "md5": "^2.3.0",
+        "modernizr": "^3.11.4"
+    }
 }

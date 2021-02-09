@@ -46,6 +46,12 @@ figure {
 
 form {
     font-family: 'Muli', sans-serif;
+
+    @media (min-width: 992px) {
+        max-width: 600px;
+        // columns: 2;
+        // break-inside: avoid-column;
+    }
 }
 
 fieldset.scheduler-border {
@@ -85,8 +91,6 @@ textarea {
     outline: none;
     padding: 0.75em;
     resize: none;
-    // width: stretch;
-    // width: -webkit-fill-available;
 }
 
 input[type='text'],
@@ -95,7 +99,8 @@ input[type='tel'],
 input[type='email'],
 select,
 textarea {
-    width: 60%;
+    width: stretch;
+    width: -webkit-fill-available;
 }
 
 input[type='radio'] {
