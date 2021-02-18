@@ -18,7 +18,6 @@
         "stylelint": "^13.9.0",
         "stylelint-config-recommended-scss": "^4.2.0",
         "stylelint-config-standard": "^20.0.0",
-        "stylelint-statement-max-nesting-depth": "^2.0.1",
         "video.js": "^7.11.4"
     },
     "name": "html",
