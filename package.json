@@ -1,30 +1,14 @@
 {
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.15.0",
-        "@typescript-eslint/parser": "^4.15.0",
-        "autoprefixer": "^10.1.0",
-        "cypress": "^5.2.0",
-        "eslint": "^7.19.0",
-        "eslint-config-google": "^0.14.0",
-        "eslint-plugin-vue": "^7.5.0",
-        "json-loader": "^0.5.7",
-        "lodash": "^4.17.20",
-        "moment": "^2.29.1",
-        "moment-locales-webpack-plugin": "^1.2.0",
-        "moment-with-locales-es6": "^1.0.1",
-        "postcss": "^8.2.2",
-        "postcss-loader": "^4.1.0",
-        "sass": "^1.32.0",
-        "stylelint": "^13.9.0",
-        "stylelint-config-recommended-scss": "^4.2.0",
-        "stylelint-config-standard": "^20.0.0",
-        "video.js": "^7.11.4"
+        "moment": "^2.29.1"
     },
     "name": "html",
     "description": "HTML boilerplate pages with examples of video, list style, vue operations",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "esbuild src/form.mjs --bundle --outfile=assets/form.mjs"
+        "build": "esbuild node_modules/moment/dist/moment.js --bundle --minify --outdir=js",
+        "watchcss": "sass node_modules/bootstrap/scss/bootstrap.scss:css/bootstrap.css scss/main.scss:css/main.css -s compressed --embed-sources --watch",
+        "watchjs": "esbuild node_modules/moment/dist/moment.js --bundle --minify --outdir=js --watch"
     },
     "repository": {
         "type": "git",
@@ -38,9 +22,7 @@
     },
     "homepage": "https://github.com/danchenkov/boilerplate#readme",
     "dependencies": {
-        "bootstrap": "^5.0.0-beta1",
-        "color": "^3.1.3",
-        "crypto-js": "^4.0.0",
+        "bootstrap": "^5.0.0-beta3",
         "jquery": "^3.5.1",
         "libphonenumber-js": "^1.9.10"
     }
