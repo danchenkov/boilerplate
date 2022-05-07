@@ -58,9 +58,16 @@
 .grid {
     --width: 768px;
     --gap: 20px;
-    --aspect-1: 1;
-    --aspect-2: 0.5;
-    --aspect-3: 1.5;
+    .home & {
+		--aspect-1: 1;
+    	--aspect-2: 0.5;
+    	--aspect-3: 1.5;
+	}
+	.layout & {
+		--aspect-1: 1.5;
+    	--aspect-2: 1.5;
+    	--aspect-3: 1.5;
+	}
     --width-1:
         (var(--gap) * var(--aspect-2) * var(--aspect-3) + (var(--width) - var(--gap)) * (var(--aspect-2) + var(--aspect-3))) /
         (var(--aspect-2) + var(--aspect-3) + var(--aspect-2) * var(--aspect-3) / var(--aspect-1));

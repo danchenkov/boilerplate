@@ -1,0 +1,10 @@
+{
+  "ecmaVersion": "es5",
+  "module": false,
+  "files": [
+      "web/js/*.js",
+      "web/js/routes/*.js"
+  ]
+}
+
+ 
